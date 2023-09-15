@@ -72,11 +72,6 @@ const Event = mongoose.model('Event', eventSchema);
 const secondStorage = multer.memoryStorage();
 const EventUpload = multer({ storage: secondStorage });
 
-
-app.get('/', (req, res) => {
-  res.send('server is running successfully ');
-});
-
 app.post('/eventUpload', EventUpload.single('posterImage'), async (req, res) => {
   try {
     const {
