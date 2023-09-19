@@ -25,7 +25,7 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://event-hub-server.vercel.app",
+    origin: "https://event-hub-kah1-6nu991hi7-vishwa-vbn.vercel.app",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
